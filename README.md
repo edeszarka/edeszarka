@@ -2,8 +2,8 @@
 <h3 align="center">Data Scientist (9+ yrs) → AI / LLM Engineer</h3>
 
 <p align="center">
-Production-grade ML background on Databricks, now building RAG pipelines, multi-agent systems,
-and safety-controlled LLM applications.
+Production-grade ML background on Databricks, now building RAG pipelines, agentic handler
+architectures, and safety-controlled LLM applications.
 </p>
 
 <p align="center">
@@ -19,22 +19,13 @@ and safety-controlled LLM applications.
 I spent 9+ years building production ML systems (forecasting, classification, anomaly detection)
 across GE, Utopus Insights, and Bosch — mostly on Databricks/PySpark, with a track record of
 turning statistically rigorous models into decisions non-technical stakeholders trust. I'm now
-applying that foundation to LLM-based, RAG, and agentic systems: vendor LLM API integration
-(Gemini, Groq/Llama), FastAPI backends, RBAC + adversarial-testing safety layers, and multi-agent
-orchestration.
+applying that foundation to LLM-based, RAG, and handler-orchestrated systems: vendor LLM API
+integration (Groq, DeepSeek, Gemini), FastAPI backends, and RBAC + adversarial-testing safety
+layers.
 
 ---
 
 ### 🔧 Featured Projects
-
-**[RenovAI 2.0 — Secure Multi-Agent Architecture & Observability Framework](#)**
-Multi-agent system for renovation cost intelligence: a gateway with two-tier intent
-classification routes queries to 5 specialized handlers over an MCP server (stdio/SSE) and a
-FastAPI NL-to-SQL endpoint (Groq / DeepSeek). Layered safety design — RBAC policy checks,
-semantic PII/content-safety scanning, and a human-in-the-loop approval gate — validated against
-prompt injection, PII extraction, and RAG-poisoning attacks with a self-built 11-case
-adversarial test suite. Spec-driven refactor (Gherkin scenarios) built with AI coding agents.
-> *repo private — happy to walk through the architecture or share access on request*
 
 **[health_assistant](https://github.com/edeszarka/health_assistant)**
 Full-stack, containerized local AI health assistant — FastAPI backend, Streamlit frontend,
@@ -43,11 +34,25 @@ Bilingual (HU/EN) RAG pipeline, end-to-end from data ingestion to LLM response g
 `Python` `FastAPI` `pgvector` `RAG` `Docker`
 
 **[energy-forecasting-mlops](https://github.com/edeszarka/energy-forecasting-mlops)**
-Scalable MLOps pipeline forecasting Hungarian hourly electricity load (24h & 168h horizons) with
+MLOps pipeline forecasting Hungarian hourly electricity load (24h & 168h horizons) with
 LightGBM/Prophet on a Delta Lake medallion architecture. Custom GitHub Actions ingestion to work
-around environment network restrictions, Optuna time-series CV with leakage-safe gaps, and an
-automated weekly champion/challenger retraining framework.
+around Databricks Free Edition's notebook-level network restrictions, Optuna time-series CV with
+leakage-safe gaps, and an automated drift-monitoring framework (Evidently) that triggers
+retraining on detected distribution shift.
 `Python` `Databricks` `Delta Lake` `LightGBM` `Optuna` `GitHub Actions`
+
+**RenovAI — Renovation Cost & Due-Diligence Platform** *(private repo)*
+A handler-based orchestration system for renovation cost intelligence: a two-tier intent gateway
+(fast keyword matching, with an LLM classifier as fallback below a confidence threshold) routes
+queries to 5 domain-specialized handlers over an MCP server (stdio/SSE) and a FastAPI NL-to-SQL
+endpoint (Groq / DeepSeek). Layered safety design — RBAC policy checks, semantic PII/content-safety
+scanning, and a confidence-based escalation flag that routes low-confidence outputs to a "needs
+review" state — validated against prompt injection, PII extraction, and RAG-poisoning attacks with
+a self-built 11-case adversarial test suite. Root-caused and fixed real calibration bugs (a
+reference-area mismatch silently inflating one cost category by ~40%) through source-tracing
+rather than adjusting outputs to pass tests.
+> *Repo is private while I sanitize business logic and API keys out of it. Happy to walk through
+> the architecture live or share read access on request.*
 
 ---
 
@@ -69,11 +74,10 @@ automated weekly champion/challenger retraining framework.
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat&logo=fastapi&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini%20API-8E75B2?style=flat&logo=googlegemini&logoColor=white)
 ![Groq](https://img.shields.io/badge/Groq-F55036?style=flat&logo=groq&logoColor=white)
 
-**AI/LLM:** RAG pipelines · Multi-agent orchestration · MCP servers · Prompt-based routing · Adversarial/safety testing
+**AI/LLM:** RAG pipelines · Handler-based orchestration · MCP servers · Intent classification (keyword + LLM fallback) · Adversarial/safety testing
 **ML/Analytics:** Multi-horizon forecasting · Statistical validation · Model explainability (SHAP) · Anomaly detection
 
 ### 🎓 Certifications
