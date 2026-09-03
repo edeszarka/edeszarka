@@ -51,19 +51,6 @@ filtering, admin-level dedup) with a scenario-based test suite covering multi-ci
 upstream API failures.
 `Python` `OpenAI-compatible tool calling` `Open-Meteo API`
 
-**RenovAI — Renovation Cost & Due-Diligence Platform** *(private repo)*
-A handler-based orchestration system for renovation cost intelligence: a two-tier intent gateway
-(fast keyword matching, with an LLM classifier as fallback below a confidence threshold) routes
-queries to 5 domain-specialized handlers over an MCP server (stdio/SSE) and a FastAPI NL-to-SQL
-endpoint (Groq / DeepSeek). Layered safety design — RBAC policy checks, semantic PII/content-safety
-scanning, and a confidence-based escalation flag that routes low-confidence outputs to a "needs
-review" state — validated against prompt injection, PII extraction, and RAG-poisoning attacks with
-a self-built 11-case adversarial test suite. Root-caused and fixed real calibration bugs (a
-reference-area mismatch silently inflating one cost category by ~40%) through source-tracing
-rather than adjusting outputs to pass tests.
-> *Repo is private while I sanitize business logic and API keys out of it. Happy to walk through
-> the architecture live or share read access on request.*
-
 ---
 
 ### 💼 Experience
