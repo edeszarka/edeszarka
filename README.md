@@ -41,6 +41,16 @@ leakage-safe gaps, and an automated drift-monitoring framework (Evidently) that 
 retraining on detected distribution shift.
 `Python` `Databricks` `Delta Lake` `LightGBM` `Optuna` `GitHub Actions`
 
+**[simple-weather-agent](https://github.com/edeszarka/simple-weather-agent)**
+A minimal, provider-agnostic LLM tool-calling agent scoped to one task: current-temperature
+lookups for named cities via Open-Meteo. Two-layer scope control (system prompt + code-level
+validation) rejects out-of-scope requests and asks for clarification on ambiguous city matches
+rather than guessing; every run writes a JSON trace of tool calls and model decisions for
+auditability. Includes a geocoding disambiguation pipeline (exact-name matching, feature-code
+filtering, admin-level dedup) with a scenario-based test suite covering multi-city queries and
+upstream API failures.
+`Python` `OpenAI-compatible tool calling` `Open-Meteo API`
+
 **RenovAI — Renovation Cost & Due-Diligence Platform** *(private repo)*
 A handler-based orchestration system for renovation cost intelligence: a two-tier intent gateway
 (fast keyword matching, with an LLM classifier as fallback below a confidence threshold) routes
