@@ -41,7 +41,7 @@ leakage-safe gaps, and an automated drift-monitoring framework (Evidently) that 
 retraining on detected distribution shift.
 `Python` `Databricks` `Delta Lake` `LightGBM` `Optuna` `GitHub Actions`
 
-**[simple-weather-agent](https://github.com/edeszarka/simple-weather-agent)**
+**[waether-agent](https://github.com/edeszarka/waether-agent)**
 A minimal, provider-agnostic LLM tool-calling agent scoped to one task: current-temperature
 lookups for named cities via Open-Meteo. Two-layer scope control (system prompt + code-level
 validation) rejects out-of-scope requests and asks for clarification on ambiguous city matches
