@@ -2,8 +2,7 @@
 <h3 align="center">Data Scientist (9+ yrs) → AI / LLM Engineer</h3>
 
 <p align="center">
-ML background on Databricks, now building RAG pipelines, agentic handler
-architectures, and safety-controlled LLM applications.
+
 </p>
 
 <p align="center">
