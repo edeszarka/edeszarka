@@ -1,5 +1,5 @@
 <h1 align="center">Hi, I'm Ede Szarka 👋</h1>
-<h3 align="center">Data Scientist (9+ yrs) → AI / LLM Engineer</h3>
+<h3 align="center">Data Scientist (9+ yrs) → Exploring AI / LLM Engineering</h3>
 
 <p align="center">
 
@@ -15,12 +15,14 @@
 
 ### About
 
-I spent 9+ years building production ML systems (forecasting, classification, anomaly detection)
-across GE, Utopus Insights, and Bosch — mostly on Databricks/PySpark, with a track record of
-turning statistically rigorous models into decisions non-technical stakeholders trust. I'm now
-applying that foundation to LLM-based, RAG, and handler-orchestrated systems: vendor LLM API
-integration (Groq, DeepSeek, Gemini), FastAPI backends, and RBAC + adversarial-testing safety
-layers.
+I spent 9+ years designing and validating machine learning models — forecasting,
+classification, anomaly detection — across GE, Utopus Insights, and Bosch, mostly using
+Python, SQL, and PySpark on Databricks. Track record of turning statistically rigorous
+models into decisions non-technical stakeholders trust.
+
+I'm now applying that foundation to LLM-based and RAG systems built through self-directed
+projects: vendor LLM API integration (Groq, DeepSeek, Gemini), FastAPI backends, and
+tool-calling agents with explicit scope control and audit logging.
 
 ---
 
@@ -40,7 +42,7 @@ leakage-safe gaps, and an automated drift-monitoring framework (Evidently) that 
 retraining on detected distribution shift.
 `Python` `Databricks` `Delta Lake` `LightGBM` `Optuna` `GitHub Actions`
 
-**[waether-agent](https://github.com/edeszarka/waether-agent)**
+**[weather-agent](https://github.com/edeszarka/weather-agent)**
 A minimal, provider-agnostic LLM tool-calling agent scoped to one task: current-temperature
 lookups for named cities via Open-Meteo. Two-layer scope control (system prompt + code-level
 validation) rejects out-of-scope requests and asks for clarification on ambiguous city matches
@@ -73,7 +75,7 @@ upstream API failures.
 ![Gemini](https://img.shields.io/badge/Gemini%20API-8E75B2?style=flat&logo=googlegemini&logoColor=white)
 ![Groq](https://img.shields.io/badge/Groq-F55036?style=flat&logo=groq&logoColor=white)
 
-**AI/LLM:** RAG pipelines · Handler-based orchestration · MCP servers · Intent classification (keyword + LLM fallback) · Adversarial/safety testing
+**AI/LLM:** RAG pipelines · LLM tool-calling agents · Scope & safety validation · LLM API integration (Groq, DeepSeek, Gemini)
 **ML/Analytics:** Multi-horizon forecasting · Statistical validation · Model explainability (SHAP) · Anomaly detection
 
 ### 🎓 Certifications
